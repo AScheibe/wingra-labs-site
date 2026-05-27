@@ -61,9 +61,8 @@
     display: flex; align-items: center; justify-content: space-between;
     padding: 28px 28px; max-width: var(--maxw); margin: 0 auto;
   }
-  .brand { display: flex; align-items: baseline; gap: 10px; letter-spacing: 0.02em; }
-  .brand .w { font-weight: 800; font-size: 22px; color: var(--bone); }
-  .brand .l { font-weight: 600; font-size: 22px; color: var(--cardinal); }
+  .brand { display: inline-flex; align-items: center; }
+  .brand img { height: 44px; width: auto; display: block; }
   nav { display: flex; gap: 28px; }
   nav a {
     color: var(--mute); text-decoration: none; font-size: 14px; font-weight: 600;
@@ -189,7 +188,7 @@
 <div class="grain"></div>
 
 <header>
-  <div class="brand"><span class="w">WINGRA</span><span class="l">labs</span></div>
+  <a href="#" class="brand" aria-label="Wingra Labs home"><img src="assets/logo-header.png" alt="Wingra Labs" /></a>
   <nav>
     <a href="#what">What we do</a>
     <a href="#about">About</a>
